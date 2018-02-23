@@ -115,6 +115,7 @@ public class Tasks {
         //stop the stopwatch.
         sw.stop();
         //print the result.
+        System.out.println("Reading Alice-in-Wonderland.txt using FileReader, append to String.");
         System.out.printf("Read %d chars in %.6f sec.\n", alice.length(), sw.getElapsed());
         sw.resetTime();
         //start the stopwatch.
@@ -123,6 +124,7 @@ public class Tasks {
         //stop the stopwatch.
         sw.stop();
         //print the result.
+        System.out.println("Reading Alice-in-Wonderland.txt using FileReader, append to StringBuilder.");
         System.out.printf("Read %d chars in %.6f sec.\n", alice2.length(), sw.getElapsed());
         sw.resetTime();
         //start the stopwatch.
@@ -131,6 +133,7 @@ public class Tasks {
         //stop the stopwatch.
         sw.stop();
         //print the result.
+        System.out.println("Reading Alice-in-Wonderland.txt using BufferedReader, append lines to String.");
         System.out.printf("Read %d chars in %.6f sec.\n", alice3.length(), sw.getElapsed());
 
     }
