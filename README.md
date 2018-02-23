@@ -21,9 +21,11 @@ Read 52539 chars in 0.046017 sec.
 
 
 From reading by using different reader (FileReader and BufferedReader),
-Filereader read is slower than BufferedReader according to elapsed time.
+Filereader is read slower than BufferedReader according to elapsed time.
+Why the time is different?
+A FileReader class is a general tool to read in characters from a File. The BufferedReader class can wrap around Readers, read line by line. So, Buffered reader will read faster than FileReader.
 
 From reading by using different type of parameter (String and String builder) in the same reader,
-Using String builder is faster than String according to elapsed time.
-
+Using String builder is read faster than String according to elapsed time.
 Why the time is different?
+
